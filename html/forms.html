@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Complete HTML Forms & Input Types</title>
+</head>
+<body>
+    <h1>HTML Input Fields Demonstration</h1>
+
+    <form action="/submit" method="POST" enctype="multipart/form-data">
+
+        <!-- Fieldset and Legend -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <!-- Text Input -->
+            <label for="textInput">Text Input:</label>
+            <input type="text" id="textInput" name="textInput" placeholder="Enter text" required><br><br>
+
+            <!-- Password Input -->
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd" placeholder="Enter password" required><br><br>
+
+            <!-- Email Input -->
+            <label for="email">Email Id:</label>
+            <input type="email" id="email" name="email" placeholder="Enter email" required><br><br>
+
+            <!-- Telephone Input -->
+            <label for="telInput">Telephone Input:</label>
+            <input type="tel" id="telInput" name="telInput" placeholder="Enter your phone number"><br><br>
+
+            <!-- Radio Buttons (Gender) -->
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="M" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="F">
+            <label for="female">Female</label><br><br>
+
+            <!-- Datalist (City) -->
+            <label for="city">City:</label>
+            <input list="cities" id="city" name="city" placeholder="Choose or type your city">
+            <datalist id="cities">
+                <option value="New York">
+                <option value="Los Angeles">
+                <option value="Chicago">
+                <option value="Houston">
+                <option value="Miami">
+            </datalist><br><br>
+
+        </fieldset><br>
+
+        <!-- Radio Buttons (Options) -->
+        <label>Choose an option:</label><br>
+        <input type="radio" id="option1" name="options" value="Option 1" required>
+        <label for="option1">Option 1</label><br>
+        <input type="radio" id="option2" name="options" value="Option 2">
+        <label for="option2">Option 2</label><br><br>
+
+        <!-- Checkboxes -->
+        <label>Select your courses / interests:</label><br>
+        <input type="checkbox" id="WT" name="course" value="WT">
+        <label for="WT">Web Technology</label><br>
+        <input type="checkbox" id="interest1" name="interests" value="Interest 1">
+        <label for="interest1">Interest 1</label><br>
+        <input type="checkbox" id="interest2" name="interests" value="Interest 2">
+        <label for="interest2">Interest 2</label><br><br>
+
+        <!-- Select Dropdown -->
+        <label for="subjectSelect">Select Subject:</label>
+        <select id="subjectSelect" name="subject">
+            <option value="WebTechnology">WebTechnology</option>
+        </select><br><br>
+
+        <!-- Number Input -->
+        <label for="numInput">Number Input (10-30, step 2):</label>
+        <input type="number" id="numInput" name="numInput" min="10" max="30" step="2"><br><br>
+
+        <!-- Date Input -->
+        <label for="dateInput">Date Input:</label>
+        <input type="date" id="dateInput" name="dateInput" required><br><br>
+
+        <!-- Time Input -->
+        <label for="timeInput">Time Input:</label>
+        <input type="time" id="timeInput" name="timeInput" required><br><br>
+
+        <!-- File Upload -->
+        <label for="fileInput">File Input:</label>
+        <input type="file" id="fileInput" name="fileInput" accept=".jpg,.png,.pdf" required><br><br>
+
+        <!-- Search Input -->
+        <label for="searchInput">Search Input:</label>
+        <input type="search" id="searchInput" name="searchInput" placeholder="Search..."><br><br>
+
+        <!-- URL Input -->
+        <label for="urlInput">URL Input:</label>
+        <input type="url" id="urlInput" name="urlInput" placeholder="Enter a URL" required><br><br>
+
+        <!-- Color Input -->
+        <label for="colorInput">Color Input:</label>
+        <input type="color" id="colorInput" name="colorInput" value="#ff0000"><br><br>
+
+        <!-- Textarea -->
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="comments" rows="5" cols="50"></textarea><br><br>
+
+        <!-- Buttons -->
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <button type="submit">Submit Button</button><br><br>
+
+        <!-- Output -->
+        <p>Form submission status: <output name="result" for="form"></output></p>
+
+    </form>
+</body>
+</html>
